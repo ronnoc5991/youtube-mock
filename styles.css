@@ -2,6 +2,7 @@ body {
     all: unset;
     background-color: rgb(245, 245, 245);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -9,12 +10,69 @@ header {
     height: 8vh;
     width: 100vw;
     top: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#logo-container i {
+    margin: 0 0 0 1.5vw;
+}
+
+#logo-container img {
+    height: 2.5vh;
+    margin: 0 0 0 2vw;
+}
+
+#search-bar-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #606060;
+    border-radius: 2px;
+    color: #606060;
+    margin: 2vh 0 2vh 0;
+    padding-left: .5vw;
+    cursor: text;
+}
+
+#search-box {
+    flex-basis: 90%;
+}
+
+#search-button {
+    flex-basis: 10%;
+    height: 100%;
+    display: flex;
+    background-color: #F8F8F8;
+    border-left: 1px solid #606060;
+    cursor: pointer;
+}
+
+#search-button i {
+    margin: auto;
+}
+
+#header-icons-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: .5vw;
+    color: #606060;
+}
+
+#header-icons-container div {
+    margin: 0 1.5vw 0 0;
+    cursor: pointer;
 }
 
 .container {
     width: 75vw;
     min-height: 92vh;
-    /* background-color: green; */
     margin: auto;
     display: grid;
     grid-template-columns: 70% 30%;
@@ -35,8 +93,15 @@ header {
     margin: 1.25vw auto 1.25vw auto;
 }
 
+#video-information-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #606060;
+}
+
 #video-information {
-    margin: 0 auto 1.25vw 0;
+    margin: 0 auto .5vw 0;
     /* border: 1px solid black; */
 }
 
@@ -57,6 +122,126 @@ header {
 #video-views-and-date {
     font-size: 15px;
 }
+
+
+#video-social-container {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 12px;
+    color: #606060;
+}
+
+#video-social-container div {
+    padding-right: .75vw;
+    padding-bottom: 2vh;
+    padding-left: .75vw;
+    cursor: pointer;
+}
+
+.thumbs {
+    border-bottom: 2px solid #606060;
+}
+
+#video-social-container i {
+    margin: 0 .45vw 0 0;
+}
+
+#video-description-container {
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 20vh;
+}
+
+#video-creator-container {
+    width: 100%;
+    display: flex;
+    height: 9vh;
+    align-items: center;
+}
+
+#channel-information {
+    flex-basis: 50%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+#profile-picture {
+    padding-right: .5vw;
+}
+
+#profile-picture img {
+    border-radius: 50%;
+}
+
+#channel-details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+}
+
+#name h1 {
+    font-size: 15px;
+    margin: 0 .5vw 0 0;
+}
+
+#name i {
+    color: #606060;
+}
+
+#subscribers {
+    font-size: 12px;
+}
+
+#channel-options {
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+}
+
+#channel-options div {
+    margin: 0 0 0 1vw;
+    border-radius: 2px;
+}
+
+#join {
+    border: 1px solid #065FD4;
+    padding: 8px 14px 8px 14px;
+    color: #065FD4;
+}
+
+#subscribe {
+    padding: 8px 14px 8px 14px;
+    background-color: #CC0000;
+    color: #ffffff;
+}
+
+
+#video-description {
+    margin: 0 0 0 3vw;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------- SIDE BAR -------------------------------------- */
 
 #side-bar {
     grid-column-start: 2;
@@ -91,14 +276,15 @@ header {
     grid-template-rows: 1fr 2fr;
 }
 
-a {
+#side-bar a {
     all: unset;
     cursor: pointer;
 }
 
-a:visited {
+#side-bar a:visited {
     all: unset;
-    color: #606060;
+    /* color: #606060; */
+    color: black;
 }
 
 .thumbnail {
@@ -121,6 +307,7 @@ a:visited {
     grid-row-end: 2;
     font-size: 14px;
     margin-left: .5vw;
+    color: black;
 }
 
 .recommended-title a:visited {
@@ -133,7 +320,7 @@ a:visited {
     grid-row-start: 2;
     grid-row-end: 3;
     font-size: 13px;
-    color: #606060;
+    color: black;
     margin-left: .5vw;
 }
 

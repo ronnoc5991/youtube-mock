@@ -9,17 +9,61 @@
 </head>
 <body>
     <header>
-        Youtube
+        <div id="logo-container"><i class="fas fa-bars"></i><img src="/YouTube_Logo_2017.svg" alt=""></div>
+        <div id="search-bar-container">
+            <div id="search-box">Search</div>
+            <div id="search-button"><i class="fas fa-search"></i></div>
+        </div>
+        <div id="header-icons-container">
+            <div><i class="fas fa-video"></i></div>
+            <div><i class="fas fa-th"></i></div>
+            <div><i class="fas fa-bell"></i></div>
+            <div><i class="fas fa-user"></i></div>
+        </div>
     </header>
 
     <div class="container">
         <article id="video-container">
             <iframe src="https://www.youtube.com/embed/3595IuY0kgE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div id="video-information">
-                <div id="video-location"><i class="fas fa-map-marker-alt fa-lg"></i>MONT BLANC</div>
-                <div id="video-title">Hiking 120 Miles Alone on the Tour Du Mont Blanc Loop</div>
-                <div id="video-views-and-date">677,839 views - Aug 29, 2019</div>
+            
+            <div id="video-information-container">
+                <div id="video-information">
+                    <div id="video-location"><i class="fas fa-map-marker-alt fa-lg"></i>MONT BLANC</div>
+                    <div id="video-title">Hiking 120 Miles Alone on the Tour Du Mont Blanc Loop</div>
+                    <div id="video-views-and-date">677,839 views - Aug 29, 2019</div>
+                </div>
+                <div id="video-social-container">
+                    <div class="thumbs"><i class="fas fa-thumbs-up fa-lg"></i> 25K</div>
+                    <div class="thumbs"><i class="fas fa-thumbs-down fa-lg"></i> 195</div>
+                    <div><i class="fas fa-share fa-lg"></i> SHARE</div>
+                    <div><i class="fas fa-save fa-lg"></i> SAVE</div>
+                    <div><i class="fas fa-ellipsis-h fa-lg"></i></div>
+                </div>
             </div>
+
+            <div id="video-description-container">
+                <div id="video-creator-container">
+                    <div id="channel-information">
+                        <div id="profile-picture"><img src="/kraig-profile.jpg" alt=""></div>
+                        <div id="channel-details">
+                            <div id="name"><h1>Kraig Adams</h1><i class="fas fa-check-circle"></i></div>
+                            <div id="subscribers">446K subscribers</div>
+                        </div>
+                    </div>
+                    <div id="channel-options">
+                        <div id="join">JOIN</div>
+                        <div id="subscribe">SUBSCRIBE</div>
+                    </div>
+                </div>
+                <div id="video-description">
+                    I spent 6 days solo hiking 120 miles on the Tour du Mont Blanc in the Alps
+                    <br>
+                    Download my trail map - <a href="">https://alltrails.com/explore/map/map...</a>
+                    <br>
+                    Gear used in this video:
+                </div>
+            </div>
+
         </article>
         <aside id="side-bar">
             <div id="up-next-container">Up Next
@@ -28,6 +72,8 @@
                     <i class="fas fa-toggle-off fa-2x"></i>
                 </div>
             </div>
+
+<!----------------------------------------- VIDEO 1 ----------------------------------------->
 
             <div class="recommended-video">
                 <div class="thumbnail">
@@ -46,6 +92,9 @@
 
             <hr>
 
+<!----------------------------------------- VIDEO 2 ----------------------------------------->
+
+
             <div class="recommended-video">
                 <div class="thumbnail">
                     <a href="https://www.youtube.com/watch?v=iMvgjOhdAl8">
@@ -57,6 +106,41 @@
                     <a href="https://www.youtube.com/watch?v=iMvgjOhdAl8">
                         <div class="author">Kraig Adams<i class="fas fa-check-circle"></i></div>
                         <div class="views-and-date">224K views - 1 year ago</div>
+                    </a>
+                </div>
+            </div>
+
+<!----------------------------------------- VIDEO 3 ----------------------------------------->
+
+
+            <div class="recommended-video">
+                <div class="thumbnail">
+                    <a href="https://youtu.be/l3S59EfTfP0">
+                        <img src="/picos.webp" alt="">
+                    </a>
+                </div>
+                <div class="recommended-title"> <a href="https://youtu.be/l3S59EfTfP0"><b>Hiking 90 Miles Alone in Picos de Europa Spain</b></a></div>
+                <div class="recommended-details">
+                    <a href="https://youtu.be/l3S59EfTfP0">
+                        <div class="author">Kraig Adams<i class="fas fa-check-circle"></i></div>
+                        <div class="views-and-date">697K views - 9 months ago</div>
+                    </a>
+                </div>
+            </div>
+
+<!----------------------------------------- VIDEO 4 ----------------------------------------->
+
+             <div class="recommended-video">
+                <div class="thumbnail">
+                    <a href="https://youtu.be/sCTY0Ll_KeY">
+                        <img src="/chile.webp" alt="">
+                    </a>
+                </div>
+                <div class="recommended-title"> <a href="https://youtu.be/sCTY0Ll_KeY"><b>Hiking 80 Miles Alone on the Torres Del Paine Trail in Chile</b></a></div>
+                <div class="recommended-details">
+                    <a href="https://youtu.be/sCTY0Ll_KeY">
+                        <div class="author">Kraig Adams<i class="fas fa-check-circle"></i></div>
+                        <div class="views-and-date">827K views - 4 months ago</div>
                     </a>
                 </div>
             </div>
